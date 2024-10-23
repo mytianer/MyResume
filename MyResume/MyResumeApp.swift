@@ -15,3 +15,23 @@ struct MyResumeApp: App {
         }
     }
 }
+
+
+struct ContentView: View {
+    var body: some View {
+        NavigationStack {
+            NavigationLink("第一页") {
+                FirstView()
+            }
+            
+            NavigationLink("第二页") {
+                SecondView()
+            }
+        }
+    }
+}
+
+
+#Preview {
+    ContentView()
+}

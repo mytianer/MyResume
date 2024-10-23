@@ -268,10 +268,7 @@ struct FirstView: View {
                         ● 具备较强的分析问题与解决问题能力，具备较强的适应能力和自学能力，对待工作认真负责，有团队协作精神。
                         """)
                     .font(.system(size: 15))
-                    //                        .foregroundStyle(Color(uiColor: .secondaryLabel))
                     .padding(.vertical)
-                    
-                    Divider()
                     
                     Text("Experience")
                         .font(.system(size: 30, weight: .medium))
@@ -285,7 +282,7 @@ struct FirstView: View {
                                    time: "2022—至今",
                                    name: "深圳魔力鹅科技有限公司（武汉）",
                                    product: "工具类APP、AI、ChatGpt、小组件",
-                                   desc: "简介：一家小型工作室，专注于iOS的App开发，营收也是依赖内购与广告。主要是工具类的产品，但也做市场热点类的App。\n职责：负责公司 iOS、Watch、 Mac 平台下的软件开发工作 ，上线的产品比较多和杂，公司具有很多开发账号和马甲包")
+                                   desc: "简介：一家小型工作室，专注于iOS的App开发，营收也是依赖内购与广告。主要是工具类的产品，但也做市场热点类的App。上线的产品比较多和杂，有很多开发账号和马甲包")
                     
                     ExperienceCell(index: 2,
                                    time: "2021.02—2022.06",

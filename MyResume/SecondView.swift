@@ -70,7 +70,7 @@ struct SecondView: View {
                                """)
                 
                 ProjectCell(index: 4,
-                               name: "TCL通讯（深圳）",
+                               name: "MoveTime、TCL Connect",
                                skill: "Swift3、Objective-C、BLE（蓝牙）、Realm",
                                desc: """
                                主要开发的功能包括：

@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-let Paper_Size = CGSize(width: 210 * 4, height: 297 * 4)
-
-
-
 struct FirstView: View {
+    
+    @State private var trigger = false
+    @State private var image: UIImage?
+    
     var body: some View {
         ZStack {
             Color.gray
@@ -331,6 +331,35 @@ struct FirstView: View {
                     .offset(x: 0, y: 100)
             }
             .clipped()
+            .snapshot(trigger: trigger) { img in
+                image = img
+            }
+        }
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
+                    trigger.toggle()
+                } label: {
+                    Text("截图")
+                }
+            }
+        }
+        .overlay {
+            if let image {
+                Color.black
+                    .ignoresSafeArea()
+                    .overlay {
+                        Image(uiImage: image)
+                            .contextMenu {
+                                Button {
+                                    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+                                    print("图片保存到相册成功")
+                                } label: {
+                                    Text("保存到相册")
+                                }
+                            }
+                    }
+            }
         }
     }
 }

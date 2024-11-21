@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BA369612CEF0A410010294A /* Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA369602CEF0A410010294A /* Snapshot.swift */; };
 		FF9829302B0506DE00F5BD85 /* MyResumeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF98292F2B0506DE00F5BD85 /* MyResumeApp.swift */; };
 		FF9829322B0506DE00F5BD85 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9829312B0506DE00F5BD85 /* FirstView.swift */; };
 		FF9829342B0506DF00F5BD85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF9829332B0506DF00F5BD85 /* Assets.xcassets */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BA369602CEF0A410010294A /* Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapshot.swift; sourceTree = "<group>"; };
+		4BA369622CEF0ECB0010294A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FF98292C2B0506DE00F5BD85 /* MyResume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyResume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF98292F2B0506DE00F5BD85 /* MyResumeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyResumeApp.swift; sourceTree = "<group>"; };
 		FF9829312B0506DE00F5BD85 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
@@ -53,9 +56,11 @@
 		FF98292E2B0506DE00F5BD85 /* MyResume */ = {
 			isa = PBXGroup;
 			children = (
+				4BA369622CEF0ECB0010294A /* Info.plist */,
 				FF98292F2B0506DE00F5BD85 /* MyResumeApp.swift */,
 				FF9829312B0506DE00F5BD85 /* FirstView.swift */,
 				FFAEDD062CC7E0FE00C96308 /* SecondView.swift */,
+				4BA369602CEF0A410010294A /* Snapshot.swift */,
 				FF9829332B0506DF00F5BD85 /* Assets.xcassets */,
 				FF9829352B0506DF00F5BD85 /* Preview Content */,
 			);
@@ -141,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF9829322B0506DE00F5BD85 /* FirstView.swift in Sources */,
+				4BA369612CEF0A410010294A /* Snapshot.swift in Sources */,
 				FF9829302B0506DE00F5BD85 /* MyResumeApp.swift in Sources */,
 				FFAEDD072CC7E0FE00C96308 /* SecondView.swift in Sources */,
 			);
@@ -278,6 +284,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MyResume/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyResume/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "add to photo library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -307,6 +315,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MyResume/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyResume/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "add to photo library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
